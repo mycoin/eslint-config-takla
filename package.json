@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-takla",
+  "version": "0.0.5",
+  "description": "商品专用ESLint规则",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mycoin/eslint-config-takla.git"
+  },
+  "author": {
+    "name": "mycoin",
+    "email": "nqliujiangtao@gmail.com"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.3"
+  },
+  "peerDependencies": {
+    "eslint": "^7.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1"
+  },
+  "engines": {
+    "node": ">6.4.0"
+  },
+  "license": "MIT"
+}
