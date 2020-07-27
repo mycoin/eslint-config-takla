@@ -28,37 +28,40 @@ module.exports = {
   ],
   settings: {
     'import/resolver': {
-      alias: {
+      'eslint-import-resolver-custom-alias': {
+        alias: {
+          '@': './src',
+        },
         extensions: ['.js', '.jsx', '.json'],
-        map: [
-          ['@', path.resolve('./src')],
+        packages: [
+          'packages/*',
         ],
       },
     },
   },
   rules: {
     semi: ['error', 'never'],
-    'no-else-return': 'off',
-    'no-plusplus': 'off',
-    'arrow-body-style': 'off',
+    'no-else-return': 0,
+    'no-plusplus': 0,
+    'arrow-body-style': 0,
     'quote-props': ['error', 'as-needed'],
-    'func-names': 'off',
-    'prefer-template': 'off',
-    'prefer-arrow-callback': 'off',
+    'func-names': 0,
+    'prefer-template': 0,
+    'prefer-arrow-callback': 0,
     'max-len': ['error', {
       code: 140,
     }],
 
-    'import/extensions': 'off',
-    'import/named': 'off',
-    'import/no-cycle': 'off',
-    'import/no-duplicates': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'import/no-named-as-default-member': 'off',
-    'import/no-named-as-default': 'off',
-    'import/no-self-import': 'off',
-    'import/no-unresolved': 'off',
-    'import/no-useless-path-segments': 'off',
-    'import/order': 'off',
+    'import/extensions': 0,
+    'import/named': 0,
+    'import/no-cycle': 0,
+    'import/no-duplicates': 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/no-named-as-default-member': 0,
+    'import/no-named-as-default': 0,
+    'import/no-self-import': 0,
+    'import/no-unresolved': 0,
+    'import/no-useless-path-segments': 0,
+    'import/order': 0,
   },
 }
