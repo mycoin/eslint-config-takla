@@ -2,40 +2,37 @@ const path = require('path')
 
 module.exports = {
   parser: 'babel-eslint',
+  extends: [
+    'eslint:recommended',
+    'airbnb',
+  ],
+  plugins: [
+    'import',
+  ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-      modules: true,
-      experimentalObjectRestSpread: true,
     },
   },
   env: {
     browser: true,
-    commonjs: true,
+    node: true,
+    jest: true,
+    es6: true,
   },
   globals: {
     jQuery: true,
     F: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
-  plugins: [
-    'import',
-    'react',
-  ],
   settings: {
     'import/resolver': {
-      'eslint-import-resolver-custom-alias': {
+      node: {
+        extensions: ['', '.js', '.jsx', '.ts', '.tsx'],
         alias: {
-          '@': './src',
+          '@': path.resolve('./src'),
         },
-        extensions: ['.js', '.jsx', '.json'],
-        packages: [
-          'packages/*',
-        ],
       },
     },
   },
@@ -51,17 +48,5 @@ module.exports = {
     'max-len': ['error', {
       code: 140,
     }],
-
-    'import/extensions': 0,
-    'import/named': 0,
-    'import/no-cycle': 0,
-    'import/no-duplicates': 0,
-    'import/no-extraneous-dependencies': 0,
-    'import/no-named-as-default-member': 0,
-    'import/no-named-as-default': 0,
-    'import/no-self-import': 0,
-    'import/no-unresolved': 0,
-    'import/no-useless-path-segments': 0,
-    'import/order': 0,
   },
 }

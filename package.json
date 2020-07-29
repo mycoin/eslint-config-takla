@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-takla",
-  "version": "0.0.6",
+  "version": "0.0.11",
   "description": "商品专用ESLint规则",
   "repository": {
     "type": "git",
@@ -11,22 +11,20 @@
     "email": "nqliujiangtao@gmail.com"
   },
   "main": "index.js",
-  "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-import-resolver-custom-alias": "^1.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-react": "^7.20.4"
-  },
-  "peerDependencies": {
-    "eslint": "^7.5.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.5.0"
-  },
   "engines": {
     "node": ">6.4.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^5.0.0 || ^7.5.0"
+  },
+  "dependencies": {
+    "babel-eslint": "10.0.2",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react-hooks": "^4.0.8"
+  }
 }
