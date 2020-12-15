@@ -31,22 +31,33 @@ module.exports = {
       node: {
         extensions: ['', '.js', '.jsx', '.ts', '.tsx'],
         alias: {
-          '@': path.resolve('./src'),
+          '@': path.resolve('src'),
         },
       },
     },
   },
   rules: {
-    semi: ['error', 'never'],
-    'no-else-return': 0,
-    'no-plusplus': 0,
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "^@sys/",
+          "^@lofty/",
+          "^@pkg/"
+        ]
+      }
+    ],
     'arrow-body-style': 0,
-    'quote-props': ['error', 'as-needed'],
     'func-names': 0,
-    'prefer-template': 0,
-    'prefer-arrow-callback': 0,
     'max-len': ['error', {
       code: 140,
     }],
+    'no-else-return': 0,
+    'no-plusplus': 0,
+    'prefer-arrow-callback': 0,
+    'prefer-template': 0,
+    'quote-props': ['error', 'as-needed'],
+    'semi': ['error', 'never'],
+
   },
 }
