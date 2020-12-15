@@ -28,11 +28,11 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      node: {
+      alias: {
+        map: [
+          ['@', path.resolve('./src/')],
+        ],
         extensions: ['', '.js', '.jsx', '.ts', '.tsx'],
-        alias: {
-          '@': path.resolve('src'),
-        },
       },
     },
   },
@@ -58,6 +58,5 @@ module.exports = {
     'prefer-template': 0,
     'quote-props': ['error', 'as-needed'],
     'semi': ['error', 'never'],
-
   },
 }
