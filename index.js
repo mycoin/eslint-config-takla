@@ -40,11 +40,7 @@ module.exports = {
     "import/no-unresolved": [
       2,
       {
-        "ignore": [
-          "^@sys/",
-          "^@lofty/",
-          "^@pkg/"
-        ]
+        "ignore": ["^@(lofty|weex-module|pkg|sys)/"]
       }
     ],
     'arrow-body-style': 0,
