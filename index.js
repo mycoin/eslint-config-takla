@@ -37,10 +37,10 @@ module.exports = {
     },
   },
   rules: {
-    "import/no-unresolved": [
+    'import/no-unresolved': [
       2,
       {
-        "ignore": ["^@(lofty|weex-module|pkg|sys)/"]
+        'ignore': ['^@(lofty|weex-module|pkg|sys)/']
       }
     ],
     'arrow-body-style': 0,
@@ -48,11 +48,31 @@ module.exports = {
     'max-len': ['error', {
       code: 140,
     }],
+    'class-methods-use-this': 0,
+    'jsx-a11y/anchor-is-valid': 0,
     'no-else-return': 0,
+    'no-else-return': 0,
+    'no-param-reassign': 0,
     'no-plusplus': 0,
+    'no-plusplus': 0,
+    'no-restricted-globals': 0,
+    'object-curly-newline': 0,
     'prefer-arrow-callback': 0,
+    'prefer-destructuring': 0,
+    'prefer-template': 0,
     'prefer-template': 0,
     'quote-props': ['error', 'as-needed'],
     'semi': ['error', 'never'],
+
+    'react/destructuring-assignment': 0,
+    'react/forbid-prop-types': [0],
+    'react/jsx-closing-bracket-location': 0,
+    'react/jsx-indent': 'error',
+    'react/jsx-one-expression-per-line': 0,
+    'react/prefer-stateless-function': 'warn',
+    'react/prop-types': 0,
+    'react/require-default-props': 0,
+    'react/require-extension': 0,
+    'react/sort-comp': 0,
   },
 }
