@@ -40,7 +40,7 @@ module.exports = {
     'import/no-unresolved': [
       2,
       {
-        'ignore': ['^@(lofty|weex-module|pkg|sys)/']
+        'ignore': ['^@weex-module/']
       }
     ],
     'arrow-body-style': 0,
@@ -61,10 +61,14 @@ module.exports = {
     'prefer-arrow-callback': 0,
     'prefer-destructuring': 0,
     'prefer-template': 0,
-    'prefer-template': 0,
     'quote-props': ['error', 'as-needed'],
     'semi': ['error', 'never'],
-
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
     'react/destructuring-assignment': 0,
     'react/forbid-prop-types': [0],
     'react/jsx-closing-bracket-location': 0,
