@@ -2,13 +2,8 @@ const path = require('path')
 
 module.exports = {
   parser: 'babel-eslint',
-  extends: [
-    'eslint:recommended',
-    'airbnb',
-  ],
-  plugins: [
-    'import',
-  ],
+  extends: ['eslint:recommended', 'airbnb'],
+  plugins: ['import'],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -29,9 +24,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['@', path.resolve('./src/')],
-        ],
+        map: [['@', path.resolve('./src/')]],
         extensions: ['', '.js', '.jsx', '.ts', '.tsx'],
       },
     },
@@ -40,14 +33,17 @@ module.exports = {
     'import/no-unresolved': [
       2,
       {
-        'ignore': ['^@weex-module/']
-      }
+        ignore: ['^@weex-module/'],
+      },
     ],
     'arrow-body-style': 0,
     'func-names': 0,
-    'max-len': ['error', {
-      code: 140,
-    }],
+    'max-len': [
+      'error',
+      {
+        code: 140,
+      },
+    ],
     'class-methods-use-this': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'jsx-a11y/iframe-has-title': 0,
@@ -61,18 +57,19 @@ module.exports = {
     'prefer-arrow-callback': 0,
     'prefer-destructuring': 0,
     'prefer-template': 0,
-    'quote-props': ['error', 'as-needed'],
-    'semi': ['error', 'never'],
-    "newline-per-chained-call": [
-      "error",
+    'quote-props': ['error', 'consistent-as-needed'],
+    semi: ['error', 'never'],
+    'newline-per-chained-call': [
+      'error',
       {
-        "ignoreChainWithDepth": 2
-      }
+        ignoreChainWithDepth: 2,
+      },
     ],
     'react/destructuring-assignment': 0,
     'react/forbid-prop-types': [0],
     'react/jsx-closing-bracket-location': 0,
     'react/jsx-indent': 'error',
+    'react/jsx-newline': 0,
     'react/jsx-props-no-spreading': 0,
     'react/jsx-one-expression-per-line': 0,
     'react/no-deprecated': 0,
