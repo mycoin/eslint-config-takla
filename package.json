@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-takla",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "商品专用ESLint规则",
   "repository": {
     "type": "git",
