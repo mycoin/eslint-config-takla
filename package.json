@@ -10,13 +10,19 @@
     "name": "mycoin",
     "email": "nqliujiangtao@gmail.com"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "dev": "bundle-scripts dev",
+    "build": "bundle-scripts build",
+    "prepublishOnly": "npm run build"
+  },
   "engines": {
     "node": ">6.4.0"
   },
   "license": "MIT",
   "dependencies": {
-    "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-babel-module": "^5.3.2",
@@ -31,8 +37,8 @@
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "babel-eslint": "^10.1.0",
+    "bundle-scripts": "^0.3.x",
     "eslint": "^8.57.0",
-    "eslint-config-takla": "^0.0.18",
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
     "typescript": "^5.4.2"

@@ -1,6 +1,6 @@
-const path = require('path')
+import path from 'path'
 
-module.exports = {
+export default {
   parser: 'babel-eslint',
   extends: ['eslint:recommended', 'airbnb'],
   plugins: ['import'],
@@ -50,7 +50,6 @@ module.exports = {
     'no-else-return': 0,
     'no-param-reassign': 0,
     'no-plusplus': 0,
-    'no-plusplus': 0,
     'no-nested-ternary': 0,
     'no-unstable-nested-components': 0,
     'no-restricted-globals': 0,
@@ -66,7 +65,7 @@ module.exports = {
         ignoreChainWithDepth: 2,
       },
     ],
-    'react/no-unused-class-component-methods': 0,
+    'react/function-component-definition': 0,
     'react/destructuring-assignment': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-closing-bracket-location': 0,
@@ -75,7 +74,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/jsx-one-expression-per-line': 0,
     'react/no-deprecated': 0,
-    'react/prefer-stateless-function': 'warn',
+    'react/prefer-stateless-function': 1,
     'react/prop-types': 0,
     'react/require-default-props': 0,
     'react/require-extension': 0,
