@@ -64,6 +64,7 @@ export default {
     'react/jsx-one-expression-per-line': 0,
     'react/no-deprecated': 0,
     'react/no-unused-class-component-methods': 1,
+    'react/no-unstable-nested-components': 1,
     'react/prefer-stateless-function': 1,
     'react/prop-types': 0,
     'react/require-default-props': 0,
