@@ -8,17 +8,6 @@ declare const _default: {
             jsx: boolean;
         };
     };
-    env: {
-        browser: boolean;
-        node: boolean;
-        jest: boolean;
-        es6: boolean;
-    };
-    globals: {
-        define: boolean;
-        jQuery: boolean;
-        F: boolean;
-    };
     settings: {
         'import/resolver': {
             alias: {
@@ -64,6 +53,7 @@ declare const _default: {
         'react/jsx-one-expression-per-line': number;
         'react/no-deprecated': number;
         'react/no-unused-class-component-methods': number;
+        'react/no-unstable-nested-components': number;
         'react/prefer-stateless-function': number;
         'react/prop-types': number;
         'react/require-default-props': number;
