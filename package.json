@@ -32,6 +32,13 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "bundle-scripts": "^0.3.x"
+    "@babel/eslint-parser": "^7.24.1",
+    "@babel/preset-env": "^7.23.x",
+    "@babel/preset-react": "^7.23.x",
+    "bundle-scripts": "^0.3.x",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "^5.3.3"
   }
 }

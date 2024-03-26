@@ -196,8 +196,6 @@ xcuserdata/
 ## just project
 .build
 .target
-.package
-
 dump.rdb
 
 .idea

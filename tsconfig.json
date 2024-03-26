@@ -2,10 +2,10 @@
   "compileOnSave": true,
   "compilerOptions": {
     "esModuleInterop": true,
-    "jsx": "react",
     "noImplicitAny": true,
-    "removeComments": false,
     "preserveConstEnums": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
     "sourceMap": true
   },
   "include": ["src"]
