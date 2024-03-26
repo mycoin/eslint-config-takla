@@ -43,6 +43,7 @@ export default {
     'no-unstable-nested-components': 0,
     'no-restricted-globals': 0,
     'object-curly-newline': 0,
+    'operator-linebreak': 0,
     'prefer-arrow-callback': 0,
     'prefer-destructuring': 0,
     'prefer-template': 0,
