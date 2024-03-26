@@ -53,7 +53,7 @@ export default {
     'prefer-arrow-callback': 0,
     'prefer-destructuring': 0,
     'prefer-template': 0,
-    'quote-props': ['error', 'consistent-as-needed'],
+    'quote-props': ['warn', 'consistent'],
     semi: ['error', 'never'],
     'newline-per-chained-call': [
       'error',
