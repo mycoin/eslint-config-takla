@@ -50,9 +50,12 @@ declare const _default: {
         'newline-per-chained-call': (string | {
             ignoreChainWithDepth: number;
         })[];
+        'jsx-a11y/no-static-element-interactions': number;
+        'jsx-a11y/click-events-have-key-events': number;
         'react/function-component-definition': number;
         'react/destructuring-assignment': number;
         'react/forbid-prop-types': number;
+        'react/jsx-wrap-multilines': number;
         'react/jsx-closing-bracket-location': number;
         'react/jsx-indent': string;
         'react/jsx-newline': number;
