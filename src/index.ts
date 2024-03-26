@@ -10,6 +10,12 @@ export default {
       jsx: true,
     },
   },
+  env: {
+    browser: true,
+    node: true,
+    jest: true,
+    es6: true,
+  },
   settings: {
     'import/resolver': {
       alias: {
