@@ -35,6 +35,7 @@ declare const _default: {
         'no-unstable-nested-components': number;
         'no-restricted-globals': number;
         'object-curly-newline': number;
+        'operator-linebreak': number;
         'prefer-arrow-callback': number;
         'prefer-destructuring': number;
         'prefer-template': number;
