@@ -58,7 +58,7 @@ export default {
     'newline-per-chained-call': [
       'error',
       {
-        ignoreChainWithDepth: 2,
+        ignoreChainWithDepth: 4,
       },
     ],
     'react/function-component-definition': 0,
@@ -77,5 +77,6 @@ export default {
     'react/require-default-props': 0,
     'react/require-extension': 0,
     'react/sort-comp': 0,
+    'semi-style': ['error', 'first'],
   },
 }

@@ -8,6 +8,12 @@ declare const _default: {
             jsx: boolean;
         };
     };
+    env: {
+        browser: boolean;
+        node: boolean;
+        jest: boolean;
+        es6: boolean;
+    };
     settings: {
         'import/resolver': {
             alias: {
@@ -60,6 +66,7 @@ declare const _default: {
         'react/require-default-props': number;
         'react/require-extension': number;
         'react/sort-comp': number;
+        'semi-style': string[];
     };
 };
 export default _default;
