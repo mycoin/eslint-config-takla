@@ -33,6 +33,7 @@ export default {
     ],
     'arrow-body-style': 0,
     'func-names': 0,
+    'max-classes-per-file': 0,
     'max-len': [
       'error',
       {
@@ -41,6 +42,7 @@ export default {
     ],
     'class-methods-use-this': 0,
     'jsx-a11y/anchor-is-valid': 0,
+    'jsx-a11y/alt-text': 0,
     'jsx-a11y/iframe-has-title': 0,
     'no-else-return': 0,
     'no-param-reassign': 0,
@@ -77,6 +79,8 @@ export default {
     'react/no-unstable-nested-components': 1,
     'react/prefer-stateless-function': 1,
     'react/prop-types': 0,
+    'react/jsx-fragments': 0,
+    'react/jsx-no-target-blank': 0,
     'react/require-default-props': 0,
     'react/require-extension': 0,
     'react/sort-comp': 0,
